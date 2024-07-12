@@ -9,23 +9,24 @@ const Footer = () => {
   return (
     <section className='font-inter'>
       <Container>
-        <div className='flex justify-between w-full'>
-        <div className=''><img src={Cover} alt="" /></div>
+        <div className='lg:flex flex-row justify-between lg:w-full'>
+        <div ><img src={Cover} alt="" class="lg:rounded-none rounded " /></div>
 
         <div>
           
-<div class="  w-[511px] relative mt-[42px]">
+<div class=" mt-8 lg:w-[511px]  relative lg:mt-[42px]">
     
-    <input id="npm-install" type="text" class="py-4 pl-4 pr-[307px] bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block   dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" value="Enter your email address" disabled readonly/>
-    <button data-copy-to-clipboard-target="npm-install" class=" absolute right-0 top-0   text-white bg-green hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded text-sm w-full sm:w-auto py-4 px-8 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ">
+    <input id="npm-install" type="text" class="py-4 pl-4 lg:pr-[307px] pr-[109px]  bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block   dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500" lg:placeholder="Enter your email address"
+    placeholder=" Email address" />
+    <button  class=" absolute lg:right-0 top-0 right-0   text-white bg-green hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium lg:rounded text-sm  py-4 px-8 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ">
         Subscribe
         
     </button>
 </div>
 
-        <div className='flex  mt-[144px] '>
+        <div className='lg:flex flex-row   lg:mt-[144px] '>
         
-        <div >
+        <div className='lg:ml-0 lg:text-left text-center lg:mt-0 mt-8' >
           <h3 className='font-semibold text-base text-black'>Partnership</h3>
           <div className='font-normal text-base text-black'>
           <ul>
@@ -36,9 +37,9 @@ const Footer = () => {
           </div>
           
         </div>
-        <div className='ml-[112px]'>
+        <div className='lg:ml-[112px] lg:mt-0 mt-8 lg:text-left text-center '>
         <h3 className='font-semibold text-base text-black'>About</h3>
-        <div className='font-normal text-base text-black'>
+        <div className='font-normal text-base text-black '>
         <ul>
             <li>Our Projects</li>
             <li>Careers</li>
@@ -48,7 +49,7 @@ const Footer = () => {
 
           
         </div>
-        <div className='ml-[112px]'>
+        <div className='lg:ml-[112px] lg:text-left text-center lg:mt-0 mt-8'>
         <h3 className='font-semibold text-base text-black'>Support</h3>
         <div className='font-normal text-base text-black'>
         <ul>
@@ -63,7 +64,7 @@ const Footer = () => {
 
 </div>
       </div>
-      <div className='flex justify-end items-center  gap-6 mt-10'>
+      <div className='flex lg:justify-end lg:text-right ml-[90px] lg:ml-0    gap-6 mt-10'>
         <div className='text-green bg-white '><FaFacebookF /></div>
         <div className='text-green bg-white'><FaTwitter /></div>
         <div className='text-green bg-white'><FaLinkedin /></div>
